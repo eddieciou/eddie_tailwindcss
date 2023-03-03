@@ -1,11 +1,14 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <div className='radial-blue grid min-h-screen place-content-center'>
-      <div className='grid h-52 w-52 place-content-center rounded-full bg-emerald-500 shadow-2xl'>
-        <div className='grid h-32 w-32 place-content-center rounded-full bg-teal-200'>
-          <div className='h-16 w-16 rounded-full bg-red-500'></div>
-        </div>
-      </div>
+    <div className='flex flex-col gap-5 p-2'>
+      <Link href='/lesson01' className='rounded-md bg-blue-400 p-5 text-white'>
+        Lesson01
+      </Link>
+      <Link href='/lesson02' className='rounded-md bg-blue-400 p-5 text-white'>
+        Lesson02
+      </Link>
     </div>
   );
 }
